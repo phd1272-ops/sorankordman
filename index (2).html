@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کردستان امروز | خبر استان کردستان</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap">
+<style>
+:root{--bg:#f4f6f2;--surface:#fff;--ink:#16211a;--mute:#5d6b61;--line:#d9dfd6;--oak:#2c5a38;--red:#b3263e;--sun:#e6b422;--sky1:#dfe9e2;--sky2:#f4f6f2;--m1:#8fae98;--m2:#5b8467;--m3:#2c5a38;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a14;--surface:#18241c;--ink:#e9efe9;--mute:#9fb0a4;--line:#2a3a2f;--oak:#7fbf92;--red:#e0566d;--sky1:#1f3326;--sky2:#111a14;--m1:#2f4a38;--m2:#24402e;--m3:#1a3023}}
+:root[data-theme="dark"]{--bg:#111a14;--surface:#18241c;--ink:#e9efe9;--mute:#9fb0a4;--line:#2a3a2f;--oak:#7fbf92;--red:#e0566d;--sky1:#1f3326;--sky2:#111a14;--m1:#2f4a38;--m2:#24402e;--m3:#1a3023}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9;font-size:16px}
+a{color:inherit;text-decoration:none}
+a:hover h2,a:hover h3,a:hover .t{color:var(--red)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.flag{height:6px;background:linear-gradient(90deg,var(--oak) 0%,#fff 50%,var(--red) 100%)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+header .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.logo{font-weight:900;font-size:30px;line-height:1.2;color:var(--oak)}
+.logo small{display:block;font-size:12px;font-weight:500;color:var(--mute)}
+.brand{display:flex;align-items:center;gap:12px}
+.site-logo{width:2cm;height:2cm;object-fit:contain;flex:none;display:block}
+.meta{display:flex;align-items:center;gap:10px;color:var(--mute);font-size:14px}
+.meta button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 12px;font:inherit;cursor:pointer}
+nav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);background:linear-gradient(90deg,color-mix(in srgb,var(--oak) 40%,var(--surface)) 0%,var(--surface) 50%,color-mix(in srgb,var(--red) 40%,var(--surface)) 100%)}
+nav ul{display:flex;gap:4px;margin:0;padding:0;list-style:none;overflow-x:auto}
+nav a{display:block;padding:10px 14px;font-weight:500;white-space:nowrap}
+nav a[aria-current]{color:var(--red);box-shadow:inset 0 -3px var(--red)}
+.ticker{display:flex;gap:12px;align-items:center;padding:10px 0;font-size:15px;overflow:hidden;white-space:nowrap}
+.ticker b{background:var(--red);color:#fff;padding:0 12px;border-radius:6px;flex:none}
+.ticker span{overflow:hidden;text-overflow:ellipsis}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px}
+.chips button{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:2px 14px;border-radius:99px;font:inherit;font-size:14px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--oak);border-color:var(--oak);color:var(--bg)}
+.grid{display:grid;grid-template-columns:1fr;gap:28px;padding-bottom:36px}
+@media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}
+.lead{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.lead svg{display:block;width:100%;height:auto;max-height:340px}
+.lead .body{padding:18px 22px 22px}
+.tag{color:var(--red);font-weight:700;font-size:14px}
+.lead h1{font-size:clamp(24px,4.4vw,38px);line-height:1.5;margin:4px 0 8px;font-weight:900}
+.lead p{margin:0;color:var(--mute);max-width:68ch}
+.sec{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:20px;font-weight:900}
+.sec::before{content:"";width:8px;height:22px;background:var(--sun);border-radius:2px}
+.list{list-style:none;margin:0;padding:0}
+.list li{border-bottom:1px solid var(--line);padding:12px 0}
+.list h3{margin:0;font-size:17px;font-weight:700;line-height:1.7}
+.list .m{font-size:13px;color:var(--mute)}
+.empty{color:var(--mute);padding:16px 0}
+.side{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.side ol{margin:0;padding:0;list-style:none;counter-reset:n}
+.side li{counter-increment:n;display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-weight:500;line-height:1.7}
+.side li:last-child{border:0}
+.side li::before{content:counter(n,persian);font-weight:900;font-size:22px;color:var(--oak);flex:none;width:28px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding-bottom:40px}
+.cats section{border-top:3px solid var(--oak);padding-top:8px}
+.cats h3{margin:0;font-size:16px;font-weight:500;line-height:1.7}
+.cats a{display:block;padding:6px 0;border-bottom:1px solid var(--line)}
+[hidden]{display:none!important}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+@media(max-width:600px){.thumbs{grid-template-columns:repeat(2,1fr)}}
+.thumbs svg{display:block;width:100%;height:auto;border-radius:8px}
+.thumbs h3{font-size:14px;font-weight:700;margin:6px 0 0;line-height:1.7}
+.two{display:grid;gap:24px;padding-bottom:40px}
+@media(min-width:800px){.two{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+label{display:block;font-size:14px;color:var(--mute);margin-bottom:10px}
+input,textarea,select{display:block;width:100%;margin-top:2px;padding:8px 12px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px}
+.btn,.opt,td button,.adminhead button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--oak);background:var(--oak);color:var(--bg);padding:4px 16px}
+.opt{display:block;width:100%;text-align:start;margin:6px 0;background:var(--bg);color:var(--ink);border-color:var(--line)}
+.opt:hover{border-color:var(--oak)}
+.bar{position:relative;margin:8px 0;background:var(--bg);border-radius:8px;overflow:hidden;padding:4px 12px}
+.bar i{position:absolute;inset-block:0;inset-inline-start:0;background:var(--oak);opacity:.28}
+.bar span{position:relative;display:flex;justify-content:space-between}
+.adminhead{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:20px 0 6px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--mute)}
+.stat b{display:block;font-size:30px;color:var(--oak);line-height:1.4}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:start;padding:8px;border-bottom:1px solid var(--line)}
+#msgs{list-style:none;margin:0;padding:0}#msgs li{padding:10px 0;border-bottom:1px solid var(--line)}
+#admin{padding-bottom:40px}
+.art{max-width:760px;margin:0 auto;padding:20px 0 40px}
+.art h1{font-size:clamp(24px,4.5vw,36px);line-height:1.6;font-weight:900;margin:4px 0 6px}
+.art p{font-size:18px;line-height:2.1;max-width:68ch}
+.art svg{display:block;width:100%;height:auto;border-radius:12px;margin:12px 0 18px}
+.bm{color:var(--mute);font-size:14px!important;margin:0 0 6px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.gal button{border:0;padding:0;background:none;cursor:pointer;text-align:start;color:inherit;font:inherit}
+.gal svg{display:block;width:100%;height:auto;border-radius:10px}
+.gal span{display:block;margin-top:4px;font-size:14px;font-weight:500;line-height:1.7}
+.vid{position:relative}
+.vid svg.pl{position:absolute;inset:0;margin:auto;width:48px;height:48px}
+.vid em{position:absolute;inset-block-end:6px;inset-inline-end:6px;background:rgba(0,0,0,.72);color:#fff;font-style:normal;font-size:12px;padding:0 8px;border-radius:6px}
+dialog{border:0;border-radius:14px;padding:16px;width:min(92vw,720px);background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog svg{display:block;width:100%;height:auto;border-radius:10px}
+dialog p{margin:10px 0}
+.lead img,.thumbs img,.gal img,dialog img,.mr img{display:block;width:100%;object-fit:cover;border-radius:8px}
+.lead img{border-radius:0;max-height:340px}
+.mr{display:flex;gap:8px;align-items:center;margin:6px 0}.mr input{margin:0}.mr>span{flex:none}
+details summary{cursor:pointer;font-size:17px}
+h4{margin:14px 0 4px}
+nav a{border-radius:10px;transition:background .15s,color .15s}
+nav a .ic{display:inline-block;transition:text-shadow .15s}
+nav a:hover,nav a:focus-visible{color:var(--red);background:radial-gradient(circle,rgba(224,86,109,.30),rgba(224,86,109,.08) 75%)}
+nav a:hover .ic,nav a:focus-visible .ic{color:transparent;text-shadow:0 0 0 #f4a3b5}
+nav a[aria-current]{color:var(--red);background:none;box-shadow:inset 0 -3px var(--red)}
+nav a[aria-current] .ic{color:transparent;text-shadow:0 0 0 var(--red)}
+.navrow{display:flex;align-items:center;gap:8px}
+.navrow ul{flex:1;min-width:0}
+.navrow{justify-content:space-between}
+.srch{position:relative;width:100%;padding:1mm;background:var(--red);border-radius:99px;margin-bottom:16px}
+.srch input{margin:0;padding:4px 14px;border:0;border-radius:99px;font-size:14px}
+#sr{position:absolute;left:0;right:0;top:calc(100% + 4px);max-height:320px;overflow:auto;z-index:20;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+#sr a{display:block;padding:8px 14px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.7}
+#sr a:hover{background:rgba(224,86,109,.14)}
+#sr small{color:var(--mute)}
+@media(max-width:700px){.navrow{flex-wrap:wrap}.srch{width:100%;margin-bottom:8px}}
+.notes{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;align-self:start}
+.nh{display:flex;justify-content:space-between;align-items:center;background:var(--m3);color:#fff;padding:6px 16px;font-size:20px}
+.ni{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.ni:last-child{border:0}
+.ni h3{margin:0;font-size:15px;font-weight:900;line-height:1.7}
+.ni p{margin:4px 0 0;color:var(--oak);font-size:14px}
+.np{flex:none;width:82px}
+.np svg,.np img{display:block;width:82px;height:82px;object-fit:cover;border-radius:6px 6px 26px 6px}
+@media(min-width:1000px){.grid{grid-template-columns:270px 1fr 270px}.wrap{max-width:1280px}}
+@media(min-width:900px) and (max-width:999px){.grid{grid-template-columns:1fr}}
+footer{background:var(--oak);color:#fff;padding:22px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#0c130f}}
+:root[data-theme="dark"] footer{background:#0c130f}
+
+nav{position:relative;z-index:40}
+nav ul{overflow:visible;flex-wrap:wrap;gap:2px}
+nav li{position:relative}
+nav a.tl{padding:10px 10px;font-size:15px}
+nav .ar{font-size:10px;opacity:.7;margin-inline-start:2px}
+.sub{display:none;position:absolute;top:100%;inset-inline-start:0;z-index:50;min-width:220px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--red);border-radius:0 0 12px 12px;box-shadow:0 12px 28px rgba(0,0,0,.2);padding:6px;max-height:75vh;overflow:auto}
+.sub.rt{inset-inline-start:auto;inset-inline-end:0}
+.sub.wide{column-count:2;column-gap:4px;min-width:min(440px,92vw)}
+nav li:hover>.sub,nav li:focus-within>.sub,nav li.open>.sub{display:block}
+nav li.shut>.sub{display:none!important}
+nav .sub a{padding:6px 12px;font-size:14px;white-space:normal;break-inside:avoid}
+nav .sub a[aria-current]{box-shadow:none;background:rgba(179,38,62,.13);font-weight:700}
+@media(max-width:700px){nav li{position:static}.sub,.sub.rt{inset-inline:8px;min-width:0;width:auto}.sub.wide{min-width:0}}
+</style>
+</head>
+<body>
+<div class="flag"></div>
+<header>
+ <div class="wrap top">
+  <div class="brand"><img class="site-logo" src="https://uploadkon.ir/uploads/1d1123_26Screenshot-2026-10-23-182249.png" alt="لوگوی کردستان امروز" referrerpolicy="no-referrer" onerror="this.style.display='none'"><a class="logo" href="#">کردستان امروز<small>خبرهای شهرهای استان کردستان، از سنندج تا مریوان</small></a></div>
+  <div class="meta"><span id="date"></span><button id="adminBtn" type="button">داشبورد مدیریت</button><button id="lang" type="button" aria-label="زبان / زمان">کوردی</button><button id="theme" type="button" aria-label="تغییر حالت شب و روز">حالت شب</button></div>
+ </div>
+ <nav><div class="wrap navrow"><ul>
+  <li><a href="#" data-v="main" aria-current="page">صفحه اول</a></li><li><a href="#">سیاسی</a></li><li><a href="#">اجتماعی</a></li><li><a href="#">اقتصادی</a></li><li><a href="#">فرهنگ و هنر</a></li><li><a href="#">ورزش</a></li><li><a href="#">گردشگری</a></li><li><a href="#">محیط زیست</a></li><li><a href="#" data-v="media">عکس و ویدیو</a></li>
+ </ul><div class="srch"><input id="sq" type="search" placeholder="جستجو در اخبار، عکس و ویدیو" aria-label="جستجو" autocomplete="off"><div id="sr" hidden></div></div></div></nav>
+ <div class="wrap ticker"><b>فوری</b><span id="tick"></span></div>
+</header>
+
+<main class="wrap">
+ <div class="chips" id="chips" role="group" aria-label="فیلتر شهرها"></div>
+ <div class="chips" id="subchips" role="group" aria-label="زیرموضوع‌ها" hidden></div>
+ <div class="grid"><section class="notes" id="notes"></section>
+  <div>
+   <article class="lead">
+    <svg viewBox="0 0 800 300" role="img" aria-label="تصویر نمادین کوه‌های زاگرس">
+     <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--sky1)"/><stop offset="1" stop-color="var(--sky2)"/></linearGradient></defs>
+     <rect width="800" height="300" fill="url(#g)"/>
+     <circle cx="620" cy="86" r="34" fill="var(--sun)"/>
+     <path d="M0 210 L90 130 L170 190 L280 90 L390 200 L480 140 L590 210 L700 120 L800 190 V300 H0Z" fill="var(--m1)"/>
+     <path d="M0 245 L110 180 L210 230 L330 150 L450 240 L560 190 L680 250 L800 200 V300 H0Z" fill="var(--m2)"/>
+     <path d="M0 280 L140 235 L260 270 L400 225 L540 275 L680 240 L800 270 V300 H0Z" fill="var(--m3)"/>
+    </svg>
+    <div class="body">
+     <a href="#"><span class="tag">اجتماعی • سنندج</span>
+     <h1>برف‌گیری زودهنگام در گردنه‌های استان؛ راه‌های روستایی زیر نظر ستاد مدیریت بحران</h1>
+     <p>خبر نمونه: این متن برای نمایش جایگاه لید، تیتر درشت و چکیده خبر نوشته شده و باید با خبر واقعی جایگزین شود.</p></a>
+    </div>
+   </article>
+   <div class="thumbs" id="thumbs"></div>
+   <h2 class="sec" id="lt" style="margin-top:26px">آخرین اخبار</h2>
+   <ul class="list" id="list"></ul>
+  </div>
+  <aside class="side"><h2 class="sec">پربازدیدترین‌ها</h2>
+   <ol>
+    <li>برنامه جشنواره‌های فرهنگی پاییز استان اعلام شد</li>
+    <li>مسیرهای پیشنهادی طبیعت‌گردی در جنگل‌های بلوط</li>
+    <li>وضعیت جوی هفته آینده در شهرهای کردستان</li>
+    <li>صنایع‌دستی استان در نمایشگاه ملی عرضه می‌شود</li>
+    <li>تیم‌های ورزشی استان در مرحله جدید رقابت‌ها</li>
+   </ol>
+  </aside>
+ </div>
+ <div class="cats">
+  <section><h2 class="sec">فرهنگ و هنر</h2><a href="#"><h3>موسیقی محلی و روایت‌های مردمی</h3></a><a href="#"><h3>نمایشگاه خوشنویسی در سنندج</h3></a></section>
+  <section><h2 class="sec">گردشگری</h2><a href="#"><h3>دریاچه زریوار در فصل پاییز</h3></a><a href="#"><h3>روستاهای هدف گردشگری اورامان</h3></a></section>
+  <section><h2 class="sec">اقتصادی</h2><a href="#"><h3>بازار فرش و گلیم دستباف</h3></a><a href="#"><h3>مرزهای تجاری و ظرفیت صادرات</h3></a></section>
+  <section><h2 class="sec">ورزش</h2><a href="#"><h3>نتایج هفته در لیگ‌های استانی</h3></a><a href="#"><h3>جوانان کردستان در مسابقات کشوری</h3></a></section>
+ </div>
+<div class="two" id="contact">
+  <section class="card"><h2 class="sec">نظرسنجی</h2><p style="margin:0 0 8px">مهم‌ترین موضوع استان برای شما چیست؟</p><div id="poll"></div></section>
+  <section class="card"><h2 class="sec">تماس با ما</h2>
+   <form id="cf"><label>نام<input name="n" required></label><label>ایمیل یا تلفن<input name="c" required></label><label>پیام<textarea name="m" rows="3" required></textarea></label><button class="btn">ارسال پیام</button><p id="cfm" role="status" style="margin:8px 0 0"></p></form>
+   <p style="margin:12px 0 0;color:var(--mute);font-size:14px">نشانی: سنندج (نمونه) • ایمیل: info@example.ir</p></section>
+ </div>
+</main>
+<section id="article" class="wrap" hidden></section>
+<section id="media" class="wrap" style="padding-bottom:40px" hidden>
+ <h2 class="sec" style="padding-top:20px">عکس</h2><div class="gal" id="gal"></div>
+ <h2 class="sec" style="margin-top:30px">ویدیو</h2><div class="gal" id="vids"></div>
+</section>
+<dialog id="dlg"></dialog>
+<section id="admin" class="wrap" hidden>
+ <div class="adminhead"><h2 class="sec" style="margin:0">داشبورد مدیریت</h2><div><button id="back" type="button">بازگشت به سایت</button> <button id="out" type="button">خروج</button></div></div>
+ <form id="lg" class="card" style="max-width:380px"><label>نام کاربری<input name="u" autocomplete="username"></label><label>رمز عبور<input name="p" type="password" autocomplete="current-password"></label><button class="btn">ورود</button><p id="lgm" style="margin:8px 0 0">نسخه نمایشی: admin / 1234</p></form>
+ <div id="panel" hidden>
+  <div class="stats" id="stats"></div>
+  <div class="two" style="padding-bottom:20px">
+   <section class="card"><h3 style="margin:0 0 8px">افزودن خبر</h3><form id="nf"><label>تیتر<input name="t" required></label><label>شهر<select name="c" id="nc"></select></label><label>موضوع اصلی<select name="k" id="nk"></select></label><label>زیرمنو<select name="s" id="ns"></select></label><button class="btn">انتشار خبر</button></form></section>
+   <section class="card"><h3 style="margin:0 0 8px">نتایج نظرسنجی</h3><div id="pr"></div><button class="btn" id="rp" type="button">پاک‌کردن آرا</button></section>
+  </div>
+  <section class="card" style="margin-bottom:20px"><h3 style="margin:0 0 8px">مدیریت اخبار</h3><div class="tw"><table><thead><tr><th>تیتر</th><th>شهر</th><th>دسته</th><th></th></tr></thead><tbody id="tbl"></tbody></table></div></section>
+  <section class="card"><h3 style="margin:0 0 8px">پیام‌های دریافتی</h3><ul id="msgs"></ul></section>
+ </div>
+</section>
+<footer><div class="wrap"><span>کردستان امروز • نمونه طراحی رابط خبری</span><span>همه محتوا نمونه است</span></div></footer>
+
+<script>
+const cities=["همه استان","سنندج","سقز","بانه","مریوان","قروه","بیجار","دیواندره","کامیاران","سروآباد"];
+const news=[
+["سنندج","اجتماعی","جلسه شورای شهر درباره ساماندهی مسیرهای پیاده‌روی برگزار شد",12,"شوراها و شهرداری‌ها"],
+["مریوان","فرهنگی هنری","آماده‌سازی تفرجگاه‌های اطراف دریاچه برای مسافران پاییزی",35,"گردشگری"],
+["سقز","اقتصادی","نمایشگاه تولیدات محلی با حضور کارگاه‌های کوچک آغاز به کار کرد",58,"اصناف"],
+["بانه","اقتصادی","گزارش وضعیت تجارت مرزی در هفته جاری",80,"مرز"],
+["قروه","ورزشی سرگرمی","مسابقات دوستانه جوانان در ورزشگاه شهر برگزار می‌شود",110,"مسابقات"],
+["بیجار","فرهنگی هنری","کارگاه آموزش صنایع‌دستی سنتی برای نوجوانان دایر شد",150,"صنایع دستی"],
+["کامیاران","اقتصادی","طرح پاکسازی مسیرهای طبیعی با مشارکت مردم اجرا شد",190,"منابع طبیعی و محیط زیست"],
+["سنندج","فرهنگی هنری","شب شعر و موسیقی در تالار فرهنگی استان",240,"هنرهای ادبی و نمایشی"],
+["دیواندره","علمی آموزشی مهارتی","آغاز ثبت‌نام دوره‌های آموزشی مهارت‌آموزی در شهر",300,"فنی و حرفه‌ای"],
+["سروآباد","فرهنگی هنری","معرفی جاذبه‌های طبیعی منطقه برای طبیعت‌گردان",360,"گردشگری"]
+];
+const fa=n=>new Intl.NumberFormat("fa-IR").format(n);
+const ago=m=>m<1?"هم‌اکنون":m<60?fa(m)+" دقیقه پیش":fa(Math.round(m/60))+" ساعت پیش";
+let cur=cities[0];
+const chips=document.getElementById("chips"),list=document.getElementById("list"),subchips=document.getElementById("subchips");
+function render(){
+ chips.innerHTML="";
+ cities.forEach(c=>{const b=document.createElement("button");b.type="button";b.textContent=c;b.setAttribute("aria-pressed",c===cur);b.onclick=()=>{cur=c;render()};chips.appendChild(b)});
+ const items=news.filter(n=>(cur===cities[0]||n[0]===cur)&&(!catF||n[1]===catF)&&(!subF||n[4]===subF));
+ const mm=catF&&typeof CFG!=='undefined'?CFG.menu.find(x=>x[1]===catF):null,sb=(mm&&mm[3])||[];
+ subchips.innerHTML="";subchips.hidden=!sb.length;
+ if(sb.length)["",...sb].forEach(x=>{const b=document.createElement("button");b.type="button";b.textContent=x||("همه "+catF);b.setAttribute("aria-pressed",x===subF);b.onclick=()=>{subF=x;render();hl()};subchips.appendChild(b)});
+ document.getElementById("lt").textContent=catF?"اخبار "+catF+(subF?" › "+subF:""):"آخرین اخبار";
+ list.innerHTML=items.length?items.map(n=>`<li><a href="#" data-n="${news.indexOf(n)}"><div class="m"><span class="tag">${n[1]}${n[4]?" › "+n[4]:""}</span> • ${n[0]} • ${ago(n[3])}</div><h3>${n[2]}</h3></a></li>`).join(""):`<li class="empty">خبری با این فیلتر${cur!==cities[0]?" در "+cur:""} ثبت نشده است. شهر یا زیرموضوع دیگری را انتخاب کنید.</li>`;
+}
+render();
+document.getElementById("tick").textContent=news[0][2]+" ؛ "+news[1][2];
+try{document.getElementById("date").textContent=new Intl.DateTimeFormat("fa-IR-u-ca-persian",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(new Date())}catch(e){}
+const tb=document.getElementById("theme");
+tb.onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()==="#111a14";r.dataset.theme=d?"light":"dark";tb.textContent=d?"حالت شب":"حالت روز"};
+const $=id=>document.getElementById(id);
+const S={poll:[0,0,0,0,0],voted:false,msgs:[],admin:false};
+const opts=["گردشگری و طبیعت","اشتغال و اقتصاد","راه‌ها و زیرساخت","فرهنگ و هنر","محیط زیست"];
+try{const s=JSON.parse(localStorage.getItem("kn")||"null");if(s){Object.assign(S,s.S);if(s.news)news.splice(0,news.length,...s.news)}}catch(e){}
+const save=()=>{try{localStorage.setItem("kn",JSON.stringify({S,news,C:typeof CFG==='undefined'?null:CFG}))}catch(e){}};
+const tg=n=>n[1]+(n[4]?" › "+n[4]:"")+" • "+n[0];
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tot=()=>S.poll.reduce((a,b)=>a+b,0);
+const th=["دریاچه زریوار از نگاهی تازه","بازار سنتی سنندج و روایت صنایع‌دستی","جنگل‌های بلوط در آستانه پاییز","جشنواره موسیقی محلی در راه است"];
+$("thumbs").innerHTML=th.map((t,i)=>`<a href="#"><svg viewBox="0 0 200 75" role="img" aria-label="تصویر نمادین"><rect width="200" height="75" fill="var(--sky1)"/><circle cx="${40+i*36}" cy="20" r="9" fill="var(--sun)"/><path d="M0 75 L${30+i*10} ${30+i*6} L${80+i*5} 55 L${130-i*8} ${25+i*5} L200 60 V75Z" fill="var(--m2)"/><path d="M0 75 L${60+i*12} ${52-i*3} L${120-i*6} 62 L200 ${50+i*4} V75Z" fill="var(--m3)"/></svg><h3>${t}</h3></a>`).join("");
+function poll(){const t=tot();$("poll").innerHTML=S.voted?opts.map((o,i)=>{const p=t?Math.round(S.poll[i]/t*100):0;return `<div class="bar"><span>${o}<b>${fa(p)}٪</b></span><i style="width:${p}%"></i></div>`}).join("")+`<p style="margin:6px 0 0;color:var(--mute);font-size:14px">${fa(t)} رأی ثبت شده است. ممنون از مشارکت شما.</p>`:opts.map((o,i)=>`<button type="button" class="opt" data-i="${i}">${o}</button>`).join("")}
+$("poll").onclick=e=>{const b=e.target.closest("[data-i]");if(!b||S.voted)return;S.poll[b.dataset.i]++;S.voted=true;save();poll();dash()};
+$("cf").onsubmit=e=>{e.preventDefault();const f=new FormData($("cf"));S.msgs.unshift({n:f.get("n"),c:f.get("c"),m:f.get("m")});save();$("cf").reset();$("cfm").textContent="پیام شما ثبت شد. ممنون از همراهی شما.";dash()};
+$("nc").innerHTML=cities.slice(1).map(c=>`<option>${c}</option>`).join("");
+
+function dash(){$("lg").hidden=S.admin;$("panel").hidden=!S.admin;if(!S.admin)return;const t=tot();
+$("stats").innerHTML=[["خبرهای منتشرشده",news.length],["رأی نظرسنجی",t],["پیام‌های دریافتی",S.msgs.length],["شهرهای دارای خبر",new Set(news.map(n=>n[0])).size]].map(([a,b])=>`<div class="stat"><b>${fa(b)}</b>${a}</div>`).join("");
+$("tbl").innerHTML=news.map((n,i)=>`<tr><td>${esc(n[2])}</td><td>${n[0]}</td><td>${esc(n[1])}${n[4]?" › "+esc(n[4]):""}</td><td><button type="button" data-d="${i}">حذف</button></td></tr>`).join("");
+$("pr").innerHTML=opts.map((o,i)=>`<div class="bar"><span>${o}<b>${fa(S.poll[i])}</b></span><i style="width:${t?S.poll[i]/t*100:0}%"></i></div>`).join("");
+$("msgs").innerHTML=S.msgs.length?S.msgs.map((m,i)=>`<li><b>${esc(m.n)}</b> <span style="color:var(--mute)">${esc(m.c)}</span><br>${esc(m.m)} <button type="button" class="btn" data-x="${i}">حذف</button></li>`).join(""):`<li style="color:var(--mute)">هنوز پیامی نرسیده است.</li>`}
+$("panel").onclick=e=>{const d=e.target.closest("[data-d]"),x=e.target.closest("[data-x]");if(d){news.splice(+d.dataset.d,1);render()}else if(x)S.msgs.splice(+x.dataset.x,1);else if(e.target.id==="rp"){S.poll=[0,0,0,0,0];S.voted=false;poll()}else return;save();dash()};
+$("nf").onsubmit=e=>{e.preventDefault();const f=new FormData($("nf"));news.unshift([f.get("c"),f.get("k"),f.get("t"),0,f.get("s")||""]);$("nf").reset();render();save();dash()};
+$("lg").onsubmit=e=>{e.preventDefault();const f=new FormData($("lg"));if(f.get("u")==="admin"&&f.get("p")==="1234"){S.admin=true;save();dash()}else $("lgm").textContent="نام کاربری یا رمز عبور اشتباه است."};
+$("out").onclick=()=>{S.admin=false;save();dash()};
+const V=['article','media','admin'];
+function show(v){document.querySelector('main').hidden=v!=='main';V.forEach(x=>$(x).hidden=x!==v);document.querySelectorAll('nav a').forEach(a=>a.toggleAttribute('aria-current',a.dataset.v===v));if(v==='admin')dash();scrollTo(0,0)}
+const view=a=>show(a?'admin':'main');
+document.querySelectorAll('nav a,.logo').forEach(a=>a.onclick=e=>{e.preventDefault();show(a.dataset.v||'main')});
+const scene=(i,H=75)=>`<svg viewBox='0 0 200 ${H}' role='img' aria-label='تصویر نمادین'><rect width='200' height='${H}' fill='var(--sky1)'/><circle cx='${30+(i*37)%150}' cy='${H*.27}' r='9' fill='var(--sun)'/><path d='M0 ${H} L${30+(i*10)%60} ${H*.4+(i%3)*6} L${90+(i*7)%40} ${H*.73} L${140-(i*5)%40} ${H*.33+(i%4)*5} L200 ${H*.8} V${H}Z' fill='var(--m2)'/><path d='M0 ${H} L${60+(i*9)%50} ${H*.7} L${120-(i*4)%30} ${H*.82} L200 ${H*.68} V${H}Z' fill='var(--m3)'/></svg>`;
+function openArt(t,tag,m,idx){
+ const d=new Date(Date.now()-m*6e4),rel=news.filter((_,i)=>i!=idx).slice(0,4);
+ $('article').innerHTML=`<article class='art'><button type='button' class='btn' id='ab'>بازگشت به صفحه اول</button><p class='tag bm' style='margin-top:16px'>${esc(tag)}</p><h1>${esc(t)}</h1><p class='bm'>کردستان امروز • ${ago(m)} • ${new Intl.DateTimeFormat('fa-IR-u-ca-persian',{dateStyle:'long'}).format(d)}</p>${scene((+idx||3)+1)}<p><b>${esc(t)}.</b> این متن نمونه برای نمایش قالب صفحه جزئیات خبر است و باید با گزارش واقعی جایگزین شود.</p><p>در اینجا بدنه خبر قرار می‌گیرد: توضیح رویداد، نقل‌قول منابع و جزئیات زمان و مکان. پاراگراف‌ها کوتاه و با فاصله خط زیاد چیده شده‌اند تا خواندن راحت باشد.</p><p>در پایان خبر می‌توان منبع، نام خبرنگار و پیوند گزارش‌های مرتبط را آورد.</p><p><button type='button' class='btn' id='cp'>کپی پیوند خبر</button> <span id='cpm' class='bm'></span></p><h2 class='sec' style='margin-top:28px'>خبرهای مرتبط</h2><ul class='list' id='rel'>${rel.map(n=>`<li><a href='#' data-n='${news.indexOf(n)}'><div class='m'>${n[0]} • ${ago(n[3])}</div><h3>${esc(n[2])}</h3></a></li>`).join('')}</ul></article>`;
+ $('ab').onclick=()=>show('main');
+ $('cp').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('cpm').textContent='پیوند کپی شد.'}catch(e){$('cpm').textContent='کپی انجام نشد.'}};
+ show('article')}
+document.addEventListener('click',e=>{const a=e.target.closest('main a,#rel a');if(!a)return;e.preventDefault();const n=a.dataset.n!==undefined?news[+a.dataset.n]:null;openArt((a.querySelector('h1,h3')||a).textContent.trim(),n?tg(n):(a.querySelector('.tag')?.textContent||'اخبار استان'),n?n[3]:30,a.dataset.n)});
+const caps=['غروب بر فراز کوه‌ها','مسیر پیاده‌روی در جنگل','بازار صنایع‌دستی','دریاچه در صبح','روستای کوهستانی','جشنواره محلی','پاییز در دره','شب شهر'];
+const vd=[['گزارش تصویری از طبیعت پاییزی','۰۲:۴۵'],['گفت‌وگو با هنرمندان محلی','۰۵:۱۰'],['مسیر دریاچه تا کوهستان','۰۱:۵۸'],['مستند کوتاه از صنایع‌دستی','۰۳:۳۰']];
+$('gal').innerHTML=caps.map((c,i)=>`<button type='button' data-p='${i}'>${scene(i+1,150)}<span>${c}</span></button>`).join('');
+$('vids').innerHTML=vd.map((v,i)=>`<button type='button' data-w='${i}'><div class='vid'>${scene(i+3,112)}<svg class='pl' viewBox='0 0 48 48'><circle cx='24' cy='24' r='22' fill='rgba(0,0,0,.55)'/><polygon points='19,14 19,34 35,24' fill='#fff'/></svg><em>${v[1]}</em></div><span>${v[0]}</span></button>`).join('');
+const dlg=$('dlg'),cl=`<form method='dialog'><button class='btn'>بستن</button></form>`;
+$('media').onclick=e=>{const p=e.target.closest('[data-p]'),v=e.target.closest('[data-w]');if(p){const i=+p.dataset.p;dlg.innerHTML=scene(i+1,150)+`<p>${caps[i]}</p>`+cl}else if(v){const i=+v.dataset.w;dlg.innerHTML=scene(i+3,112)+`<p><b>${vd[i][0]}</b></p><p class='bm'>این پخش‌کننده نمونه است؛ در نسخه واقعی، ویدیو اینجا پخش می‌شود.</p>`+cl}else return;dlg.showModal()};
+dlg.onclick=e=>{if(e.target===dlg)dlg.close()};
+$("adminBtn").onclick=()=>view(true);$("back").onclick=()=>view(false);
+const D={ico:'🏔️',name:'کردستان امروز',tg:'خبرهای شهرهای استان کردستان، از سنندج تا مریوان',
+v:2,
+menu:[['🏠','صفحه اول','main'],
+['🏛️','سیاسی','',["احزاب", "تشکل‌ها", "استانداری", "امنیت", "سپاه", "ارتش", "بسیج", "انتخابات", "جمعیت و ثبت احوال", "انتظامی", "نمایندگی ولی فقیه در استان", "شورای نگهبان", "مجلس خبرگان", "مجلس شورای اسلامی"]],
+['⚖️','حقوقی قضایی','',["دادگستری", "سازمان بازرسی", "دیوان محاسبات", "پزشکی قانونی", "حقوق بشر", "سازمان قضایی نیروهای مسلح"]],
+['👥','اجتماعی','',["ایثار و شهادت", "آب و هوا", "بهزیستی", "کمیته امداد", "تأمین اجتماعی", "راهور", "راهداری", "اورژانس و امداد", "هلال احمر", "پلیس راه", "زنان و خانواده", "شوراها و شهرداری‌ها", "انتظامی و حوادث"]],
+['💹','اقتصادی','',["اصناف", "بازار و بازرگانی", "انرژی و مخابرات", "صنایع و معادن", "شهرسازی", "راه‌سازی", "عمران", "بنیاد مسکن", "کشاورزی", "روستا", "دامداری", "منابع طبیعی و محیط زیست", "بیمه‌ها و حمل و نقل", "شهرک‌های صنعتی", "مرز", "مناطق آزاد تجاری", "گمرک", "تعاون", "کار", "اشتغال و رفاه عمومی", "برنامه و بودجه"]],
+['🎓','علمی آموزشی مهارتی','',["آموزش و پرورش", "دانشگاه‌ها", "جهاد دانشگاهی", "حوزه‌های علمیه", "فنی و حرفه‌ای", "شرکت‌های دانش‌بنیان", "پارک علم و فناوری", "بنیاد نخبگان"]],
+['🩺','پزشکی سلامت','',["دانشگاه علوم پزشکی", "بهداشت و درمان", "بیمارستان‌ها", "طب سنتی", "انتقال خون", "سازمان نظام پزشکی"]],
+['🎭','فرهنگی هنری','',["دین", "مسجد", "قرآن", "کتاب، مطبوعات و انتشارات", "سینما، تئاتر، رادیو و تلویزیون", "هنرهای ادبی و نمایشی", "هنرهای تجسمی", "موسیقی و مولودی", "میراث فرهنگی", "صنایع دستی", "گردشگری", "فرهنگ و آداب و رسوم", "جشنواره‌های منطقه‌ای", "حج و اوقاف و عتبات", "کودک و نوجوان"]],
+['⚽','ورزشی سرگرمی','',["هیئت‌های ورزشی", "مسابقات", "تفریح و سرگرمی", "بازی‌های بومی محلی"]],
+['📷','عکس و ویدیو','media']],
+lead:{g:document.querySelector('.tag').textContent,t:document.querySelector('.lead h1').textContent,s:document.querySelector('.lead p').textContent,img:''},
+th:th.map(t=>({t,img:''})),
+side:{t:document.querySelector('.side h2').textContent,l:[...document.querySelectorAll('.side li')].map(x=>x.textContent)},
+cats:[...document.querySelectorAll('.cats section')].map(s=>({t:s.querySelector('h2').textContent,l:[...s.querySelectorAll('h3')].map(h=>h.textContent)})),
+foot:[...document.querySelectorAll('footer span')].map(x=>x.textContent),
+gal:caps.map(c=>({c,src:''})),vids:vd.map(v=>({c:v[0],d:v[1],src:''}))};
+const leadSvg=document.querySelector('.lead svg').outerHTML;
+var CFG=structuredClone(D);
+try{const s=JSON.parse(localStorage.getItem('kn')||'null');if(s&&s.C)Object.assign(CFG,s.C);CFG.vids.forEach(v=>{if((v.src||'').startsWith('blob:'))v.src=''})}catch(e){}
+const get=(o,p)=>p.split('.').reduce((a,b)=>a[b],o),set=(o,p,v)=>{const k=p.split('.'),l=k.pop();k.reduce((a,b)=>a[b],o)[l]=v};
+const pic=(s,i,H,ar)=>s?`<img src='${s}' alt='' style='aspect-ratio:${ar}'>`:scene(i,H);
+const img2url=f=>new Promise(r=>{const fr=new FileReader();fr.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);r(c.toDataURL('image/jpeg',.8))};im.src=fr.result};fr.readAsDataURL(f)});
+function apply(){
+ const q=s=>document.querySelector(s);
+ q('.logo').innerHTML=`${esc(CFG.ico)} ${esc(CFG.name)}<small>${esc(CFG.tg)}</small>`;
+ document.title=CFG.name+' | سایت خبری';
+ q('nav ul').innerHTML=CFG.menu.map((m,i)=>{const sb=m[3]||[];return `<li><a href='#' class='tl' data-i='${i}' data-v='${m[2]}'${sb.length?" aria-haspopup='true'":''}><span class='ic'>${esc(m[0])}</span> ${esc(m[1])}${sb.length?" <span class='ar' aria-hidden='true'>▾</span>":''}</a>${sb.length?`<div class='sub${sb.length>7?' wide':''}'>${sb.map(x=>`<a href='#' data-i="${i}" data-s="${esc(x)}">${esc(x)}</a>`).join('')}</div>`:''}</li>`}).join('');
+ hl();
+ const L=CFG.lead;
+ q('.lead').innerHTML=(L.img?`<img src='${L.img}' alt='' style='aspect-ratio:8/3'>`:leadSvg)+`<div class='body'><a href='#'><span class='tag'>${esc(L.g)}</span><h1>${esc(L.t)}</h1><p>${esc(L.s)}</p></a></div>`;
+ $('thumbs').innerHTML=CFG.th.map((x,i)=>`<a href='#'>${pic(x.img,i,75,'8/3')}<h3>${esc(x.t)}</h3></a>`).join('');
+ q('.side').innerHTML=`<h2 class='sec'>${esc(CFG.side.t)}</h2><ol>${CFG.side.l.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`;
+ q('.cats').innerHTML=CFG.cats.map(c=>`<section><h2 class='sec'>${esc(c.t)}</h2>${c.l.map(x=>`<a href='#'><h3>${esc(x)}</h3></a>`).join('')}</section>`).join('');
+ q('.ticker b').textContent=CFG.tick.l;$('tick').textContent=CFG.tick.t.join(' ؛ ');
+ renderNotes();q('footer .wrap').innerHTML=CFG.foot.map(x=>`<span>${esc(x)}</span>`).join('');
+ $('gal').innerHTML=CFG.gal.map((g,i)=>`<button type='button' data-p='${i}'>${pic(g.src,i+1,150,'4/3')}<span>${esc(g.c)}</span></button>`).join('');
+ $('vids').innerHTML=CFG.vids.map((v,i)=>`<button type='button' data-w='${i}'><div class='vid'>${scene(i+3,112)}<svg class='pl' viewBox='0 0 48 48'><circle cx='24' cy='24' r='22' fill='rgba(0,0,0,.55)'/><polygon points='19,14 19,34 35,24' fill='#fff'/></svg><em>${esc(v.d)}</em></div><span>${esc(v.c)}</span></button>`).join('');
+}
+document.querySelector('nav ul').onclick=e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();show(a.dataset.v||'main')};
+$('media').onclick=e=>{const p=e.target.closest('[data-p]'),v=e.target.closest('[data-w]');if(p){const i=+p.dataset.p,g=CFG.gal[i];dlg.innerHTML=pic(g.src,i+1,150,'4/3')+`<p>${esc(g.c)}</p>`+cl}else if(v){const i=+v.dataset.w,x=CFG.vids[i];dlg.innerHTML=(x.src?`<video controls autoplay playsinline src='${x.src.replace(/'/g,'%27')}' style='width:100%;border-radius:10px'></video>`:scene(i+3,112)+`<p class='bm'>ویدیویی بارگذاری نشده است؛ از داشبورد، فایل یا نشانی ویدیو را اضافه کنید.</p>`)+`<p><b>${esc(x.c)}</b></p>`+cl}else return;dlg.showModal()};
+dlg.onclose=()=>dlg.innerHTML='';
+$('stats').insertAdjacentHTML('afterend',`<details class='card' style='margin-bottom:20px' open><summary><b>ویرایش محتوای سایت (تیترها، تصاویر، متن‌ها)</b></summary><form id='ef'></form></details><details class='card' style='margin-bottom:20px'><summary><b>مدیریت منوها و آیکن‌ها</b></summary><div id='mf'></div></details><details class='card' style='margin-bottom:20px'><summary><b>مدیریت عکس و ویدیو</b></summary><div id='mm'></div></details>`);
+const F=(k,l,ta)=>`<label>${l}${ta?`<textarea data-k='${k}' rows='4'></textarea>`:`<input data-k='${k}'>`}</label>`;
+const I=(k,l)=>`<label>${l}<input type='file' accept='image/*' data-im='${k}'></label><button type='button' class='btn' data-rm='${k}' style='margin-bottom:12px'>حذف تصویر</button>`;
+function edForm(){
+ $('ef').innerHTML=`<div class='two' style='padding:12px 0'><div>${F('ico','آیکن لوگو (ایموجی)')}${F('name','نام سایت')}${F('tg','شعار زیر نام')}<h4>خبر اصلی</h4>${F('lead.g','دسته و شهر')}${F('lead.t','تیتر')}${F('lead.s','چکیده',1)}${I('lead','تصویر خبر اصلی')}</div><div><h4>چهار خبر کوچک</h4>${[0,1,2,3].map(i=>F('th.'+i+'.t','تیتر خبر '+fa(i+1))+I('th.'+i,'تصویر خبر '+fa(i+1))).join('')}</div><div>${F('side.t','عنوان ستون کناری')}${F('side.l','موارد (هر خط یک مورد)',1)}<h4>نوار خبر فوری</h4>${F('tick.l','برچسب نوار (مثلاً فوری)')}${F('tick.t','متن خبرهای فوری (هر خط یک خبر)',1)}${F('foot.0','متن پایین صفحه')}${F('foot.1','متن دوم پایین صفحه')}</div><div>${CFG.cats.map((c,i)=>F('cats.'+i+'.t','عنوان بلوک '+fa(i+1))+F('cats.'+i+'.l','تیترها (هر خط یک مورد)',1)).join('')}</div></div><button class='btn' type='submit'>ذخیره تغییرات</button> <button class='btn' type='button' id='rs'>بازنشانی همه به حالت اولیه</button> <span id='em' class='bm'></span>`;
+ $('ef').querySelectorAll('[data-k]').forEach(el=>{const v=get(CFG,el.dataset.k);el.value=Array.isArray(v)?v.join('\n'):v});
+}
+$('ef').onsubmit=e=>{e.preventDefault();$('ef').querySelectorAll('[data-k]').forEach(el=>{const o=get(CFG,el.dataset.k);set(CFG,el.dataset.k,Array.isArray(o)?el.value.split('\n').map(x=>x.trim()).filter(Boolean):el.value)});save();apply();$('em').textContent='تغییرات ذخیره شد.'};
+$('ef').onchange=async e=>{const k=e.target.dataset.im;if(!k||!e.target.files[0])return;set(CFG,k+'.img',await img2url(e.target.files[0]));save();apply();$('em').textContent='تصویر جایگزین شد.'};
+$('ef').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.rm)set(CFG,b.dataset.rm+'.img','');else if(b.id==='rs'){CFG=structuredClone(D);menuAdmin();mediaAdmin();edForm()}else return;save();apply()};
+function menuAdmin(){
+ $('mf').innerHTML=CFG.menu.map((m,i)=>`<div class='mr'><input data-mi='${i}.0' style='width:64px'><input data-mi='${i}.1'><button type='button' class='btn' data-mu='${i}'>بالا</button><button type='button' class='btn' data-md='${i}'>حذف</button></div>`+(m[2]?'':`<label style='margin:0 0 10px'>زیرمنوهای «${esc(m[1])}» (هر خط یک مورد)<textarea data-ms='${i}' rows='4'></textarea></label>`)).join('')+`<div class='mr'><input id='ni' placeholder='آیکن' style='width:64px'><input id='nl' placeholder='عنوان منوی جدید'><button type='button' class='btn' id='na'>افزودن منو</button></div>`;
+ $('mf').querySelectorAll('[data-mi]').forEach(el=>{const[i,f]=el.dataset.mi.split('.');el.value=CFG.menu[i][f]});
+ $('mf').querySelectorAll('[data-ms]').forEach(el=>el.value=(CFG.menu[el.dataset.ms][3]||[]).join('\n'));
+}
+$('mf').oninput=e=>{const t=e.target.dataset;if(t.ms!==undefined){CFG.menu[t.ms][3]=e.target.value.split('\n').map(x=>x.trim()).filter(Boolean);save();apply();fillNK();return}const d=t.mi;if(!d)return;const[i,f]=d.split('.');CFG.menu[i][f]=e.target.value;save();apply();fillNK()};
+$('mf').onclick=e=>{const b=e.target.closest('button'),m=CFG.menu;if(!b)return;if(b.dataset.md)m.splice(+b.dataset.md,1);else if(b.dataset.mu){const i=+b.dataset.mu;if(i>0)[m[i-1],m[i]]=[m[i],m[i-1]]}else if(b.id==='na'&&$('nl').value.trim())m.push([$('ni').value||'📰',$('nl').value.trim(),'',[]]);else return;save();apply();menuAdmin();fillNK()};
+function mediaAdmin(){
+ $('mm').innerHTML=`<h4>افزودن عکس</h4><div class='mr'><input id='pc' placeholder='شرح عکس (اختیاری)'><input id='pf' type='file' accept='image/*' multiple></div><h4>افزودن ویدیو</h4><div class='two' style='padding:0'><div><label>فایل ویدیو<input id='vf' type='file' accept='video/*'></label><label>یا نشانی ویدیو (mp4)<input id='vu' dir='ltr'></label></div><div><label>عنوان<input id='vt'></label><label>مدت زمان<input id='vm' placeholder='۰۲:۳۰'></label></div></div><button type='button' class='btn' id='va'>افزودن ویدیو</button> <span class='bm'>فایل ویدیو فقط تا بستن صفحه می‌ماند؛ برای ماندگاری، نشانی ویدیو را وارد کنید.</span><h4>عکس‌ها</h4>${CFG.gal.map((g,i)=>`<div class='mr'><span style='width:72px'>${pic(g.src,i+1,150,'4/3')}</span><input data-gc='${i}'><button type='button' class='btn' data-gd='${i}'>حذف</button></div>`).join('')}<h4>ویدیوها</h4>${CFG.vids.map((v,i)=>`<div class='mr'><span style='width:72px'>${scene(i+3,112)}</span><input data-vc='${i}'><button type='button' class='btn' data-vd='${i}'>حذف</button></div>`).join('')}`;
+ $('mm').querySelectorAll('[data-gc]').forEach(el=>el.value=CFG.gal[el.dataset.gc].c);
+ $('mm').querySelectorAll('[data-vc]').forEach(el=>el.value=CFG.vids[el.dataset.vc].c);
+}
+$('mm').onchange=async e=>{if(e.target.id!=='pf')return;for(const f of e.target.files)CFG.gal.unshift({c:$('pc').value||f.name.replace(/\.\w+$/,''),src:await img2url(f)});save();apply();mediaAdmin()};
+$('mm').oninput=e=>{const d=e.target.dataset;if(d.gc!==undefined)CFG.gal[d.gc].c=e.target.value;else if(d.vc!==undefined)CFG.vids[d.vc].c=e.target.value;else return;save();apply()};
+$('mm').onclick=e=>{const b=e.target.closest('button');if(!b)return;const d=b.dataset;if(d.gd!==undefined)CFG.gal.splice(+d.gd,1);else if(d.vd!==undefined)CFG.vids.splice(+d.vd,1);else if(b.id==='va'){const f=$('vf').files[0],u=$('vu').value.trim(),t=$('vt').value.trim();if((!f&&!u)||!t)return;CFG.vids.unshift({c:t,d:$('vm').value,src:f?URL.createObjectURL(f):u})}else return;save();apply();mediaAdmin()};
+const dash1=dash;dash=function(){dash1();if(S.admin)fillNK();if(S.admin&&!$('ef').dataset.r){$('ef').dataset.r=1;edForm();menuAdmin();mediaAdmin();noteAdmin()}};
+D.tick={l:'فوری',t:[news[0][2],news[1][2]]};if(!CFG.tick)CFG.tick=structuredClone(D.tick);
+D.notes={t:'یادداشت',l:[{t:'نگاهی به ظرفیت‌های گردشگری استان',a:'نویسنده نمونه ۱',img:''},{t:'گفت‌وگو درباره آینده صنایع‌دستی',a:'نویسنده نمونه ۲',img:''},{t:'چالش‌های حمل‌ونقل زمستانی در گردنه‌ها',a:'نویسنده نمونه ۳',img:''},{t:'ضرورت حفظ جنگل‌های بلوط',a:'نویسنده نمونه ۴',img:''}]};
+if(!CFG.notes)CFG.notes=structuredClone(D.notes);
+const av=i=>`<svg viewBox='0 0 80 80' aria-hidden='true'><rect width='80' height='80' fill='${['#dfe9e2','#e9dfe3','#e8e6d6','#d9e4ee'][i%4]}'/><circle cx='40' cy='32' r='14' fill='#5b8467'/><path d='M12 80 Q40 40 68 80Z' fill='#2c5a38'/></svg>`;
+function renderNotes(){const N=CFG.notes;$('notes').innerHTML=`<div class='nh'><b>${esc(N.t)}</b><svg viewBox='0 0 24 24' width='28' height='28' fill='none' stroke='#fff' stroke-width='2' aria-hidden='true'><path d='M6 3h9l4 4v14H6z'/><path d='M9 8h3M9 12h7M9 16h7'/></svg></div>`+N.l.map((n,i)=>`<a href='#' class='ni'><div><h3>${esc(n.t)}</h3><p>${esc(n.a)}</p><span class='tag' hidden>${esc(N.t)}</span></div><span class='np'>${n.img?`<img src='${n.img}' alt=''>`:av(i)}</span></a>`).join('')}
+$('mm').parentElement.insertAdjacentHTML('afterend',`<details class='card' style='margin-bottom:20px'><summary><b>مدیریت کادر یادداشت (سمت راست)</b></summary><div id='nm'></div></details>`);
+function noteAdmin(){const N=CFG.notes;$('nm').innerHTML=`<label>عنوان کادر<input data-nt></label>`+N.l.map((n,i)=>`<div class='mr'><span style='width:56px'>${n.img?`<img src='${n.img}' alt='' style='aspect-ratio:1'>`:av(i)}</span><input data-nh='${i}' placeholder='تیتر'><input data-na='${i}' placeholder='نویسنده'><input type='file' accept='image/*' data-np='${i}' style='width:110px'><button type='button' class='btn' data-nd='${i}'>حذف</button></div>`).join('')+`<button type='button' class='btn' id='nadd'>افزودن یادداشت</button>`;
+ $('nm').querySelector('[data-nt]').value=N.t;$('nm').querySelectorAll('[data-nh]').forEach(e=>e.value=N.l[e.dataset.nh].t);$('nm').querySelectorAll('[data-na]').forEach(e=>e.value=N.l[e.dataset.na].a)}
+$('nm').oninput=e=>{const d=e.target.dataset,N=CFG.notes;if('nt' in d)N.t=e.target.value;else if(d.nh!==undefined)N.l[d.nh].t=e.target.value;else if(d.na!==undefined)N.l[d.na].a=e.target.value;else return;save();renderNotes()};
+$('nm').onchange=async e=>{const i=e.target.dataset.np;if(i===undefined||!e.target.files[0])return;CFG.notes.l[i].img=await img2url(e.target.files[0]);save();renderNotes();noteAdmin()};
+$('nm').onclick=e=>{const b=e.target.closest('button');if(!b)return;const N=CFG.notes;if(b.dataset.nd!==undefined)N.l.splice(+b.dataset.nd,1);else if(b.id==='nadd')N.l.push({t:'تیتر یادداشت جدید',a:'نام نویسنده',img:''});else return;save();renderNotes();noteAdmin()};
+var mi=0,catF='',subF='';
+(()=>{const s=document.querySelector('.side'),w=document.createElement('div'),b=document.querySelector('.srch');s.before(w);w.append(b,s)})();
+const nz=s=>String(s).replace(/ي/g,'ی').replace(/ك/g,'ک').toLowerCase();
+const sq=$('sq'),sr=$('sr');
+function srch(){const t=nz(sq.value.trim());if(!t){sr.hidden=true;return}
+ const r=[];
+ news.forEach((n,i)=>{if(nz(n[2]).includes(t))r.push(`<a href='#' data-sn='${i}'>${esc(n[2])}<br><small>خبر • ${esc(n[0])}</small></a>`)});
+ CFG.gal.forEach((g,i)=>{if(nz(g.c).includes(t))r.push(`<a href='#' data-sg='${i}'>${esc(g.c)}<br><small>عکس</small></a>`)});
+ CFG.vids.forEach((v,i)=>{if(nz(v.c).includes(t))r.push(`<a href='#' data-sv='${i}'>${esc(v.c)}<br><small>ویدیو</small></a>`)});
+ sr.innerHTML=r.length?r.slice(0,8).join(''):`<p style='margin:0;padding:10px 14px;color:var(--mute);font-size:14px'>نتیجه‌ای پیدا نشد.</p>`;sr.hidden=false}
+sq.oninput=srch;sq.onfocus=srch;
+sq.onkeydown=e=>{if(e.key==='Escape')sr.hidden=true;if(e.key==='Enter'){e.preventDefault();const a=sr.querySelector('a');if(a)a.click()}};
+sr.onclick=e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();const d=a.dataset;sr.hidden=true;
+ if(d.sn!==undefined){const i=+d.sn,n=news[i];openArt(n[2],tg(n),n[3],i)}
+ else{show('media');const el=(d.sg!==undefined?$('gal'):$('vids')).children[+(d.sg!==undefined?d.sg:d.sv)];if(el)el.click()}};
+document.addEventListener('click',e=>{if(!e.target.closest('.srch'))sr.hidden=true});
+function hl(){document.querySelectorAll('nav a').forEach(a=>{const sm=a.dataset.s!==undefined,on=+a.dataset.i===mi&&(!sm||a.dataset.s===subF);a.toggleAttribute('aria-current',on)})}
+function fillNK(){const k=$("nk"),v=k.value,cs=CFG.menu.filter(m=>!m[2]);k.innerHTML=cs.map(m=>`<option>${esc(m[1])}</option>`).join("");if(cs.some(m=>m[1]===v))k.value=v;fillNS()}
+function fillNS(){const m=CFG.menu.find(x=>!x[2]&&x[1]===$("nk").value),o=$("ns"),v=o.value;o.innerHTML=`<option value="">— بدون زیرمنو —</option>`+((m&&m[3])||[]).map(x=>`<option>${esc(x)}</option>`).join("");if([...o.options].some(x=>x.value===v))o.value=v}
+$("nk").onchange=fillNS;
+const navUl=document.querySelector('nav ul');
+navUl.onclick=e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();const li=a.closest('li');mi=+a.dataset.i;const m=CFG.menu[mi];
+ if(a.dataset.s!==undefined){catF=m[1];subF=a.dataset.s;li.classList.remove('open');li.classList.add('shut');li.addEventListener('mouseleave',()=>li.classList.remove('shut'),{once:true})}
+ else{catF=(m[2]||mi===0)?'':m[1];subF='';li.classList.remove('shut');navUl.querySelectorAll('li.open').forEach(x=>x!==li&&x.classList.remove('open'));if(!matchMedia('(hover:hover)').matches&&m[3]&&m[3].length)li.classList.toggle('open')}
+ cur=cities[0];render();show(m[2]||'main');hl()};
+const fit=e=>{const li=e.target.closest&&e.target.closest('li');const d=li&&li.querySelector('.sub');if(!d)return;d.classList.remove('rt');if(d.getBoundingClientRect().left<4)d.classList.add('rt')};
+navUl.addEventListener('mouseover',fit);navUl.addEventListener('focusin',fit);
+navUl.addEventListener('mouseleave',()=>navUl.querySelectorAll('li.open').forEach(x=>x.classList.remove('open')));
+document.addEventListener('click',e=>{if(!e.target.closest('nav'))navUl.querySelectorAll('li.open').forEach(x=>x.classList.remove('open'))});
+document.querySelector('.logo').onclick=e=>{e.preventDefault();mi=0;catF='';subF='';cur=cities[0];render();show('main');hl()};
+(()=>{const MAP={'گردشگری':['فرهنگی هنری','گردشگری'],'محیط زیست':['اقتصادی','منابع طبیعی و محیط زیست'],'فرهنگ و هنر':['فرهنگی هنری','فرهنگ و آداب و رسوم'],'ورزش':['ورزشی سرگرمی','مسابقات']};let ch=false;
+ news.forEach(n=>{if(n[4]===undefined){const r=MAP[n[1]];if(r){n[1]=r[0];n[4]=r[1]}else n[4]='';ch=true}});
+ let st=null;try{st=JSON.parse(localStorage.getItem('kn')||'null')}catch(e){}
+ if(st&&st.C&&st.C.v!==D.v){CFG.menu=structuredClone(D.menu);ch=true}
+ CFG.v=D.v;
+ if(ch)save()})();
+apply();render();poll();
+</script>
+<script>
+(()=>{
+const R=`کردستان امروز|کوردستانی ئەمڕۆ
+خبرهای شهرهای استان کردستان، از سنندج تا مریوان|هەواڵی شارەکانی پارێزگای کوردستان، لە سنەوە تا مەریوان
+سنندج|سنە
+مریوان|مەریوان
+سقز|سەقز
+بانه|بانە
+قروه|قروە
+بیجار|بیجار
+دیواندره|دیواندەرە
+کامیاران|کامیاران
+سروآباد|سەروئاوا
+داشبورد مدیریت|پانێڵی بەڕێوەبردن
+حالت شب|دۆخی شەو
+حالت روز|دۆخی ڕۆژ
+تغییر حالت شب و روز|گۆڕینی دۆخی شەو و ڕۆژ
+صفحه اول|لاپەڕەی سەرەکی
+سیاسی|سیاسی
+اجتماعی|کۆمەڵایەتی
+اقتصادی|ئابووری
+فرهنگ و هنر|کولتوور و هونەر
+ورزش|وەرزش
+گردشگری|گەشتیاری
+محیط زیست|ژینگە
+عکس و ویدیو|وێنە و ڤیدیۆ
+عکس|وێنە
+ویدیو|ڤیدیۆ
+جستجو در اخبار، عکس و ویدیو|گەڕان لە هەواڵ، وێنە و ڤیدیۆدا
+جستجو|گەڕان
+اخبار|هەواڵ
+فوری|بەپەلە
+فیلتر شهرها|فلتەری شارەکان
+زیرموضوع‌ها|ژێرتەوەرەکان
+تصویر نمادین کوه‌های زاگرس|وێنەی هێمایی چیاکانی زاگرۆس
+روستا|گوند
+برف‌گیری زودهنگام در گردنه‌های استان؛ راه‌های روستایی زیر نظر ستاد مدیریت بحران|بەفرلادانی زوو لە گەردنەکانی پارێزگا؛ ڕێگای گوندەکان لەژێر چاودێریی بەڕێوەبردنی قەیراندان
+خبر نمونه: این متن برای نمایش جایگاه لید، تیتر درشت و چکیده خبر نوشته شده و باید با خبر واقعی جایگزین شود.|هەواڵی نموونە: ئەم دەقە بۆ پیشاندانی شوێنی هەواڵی سەرەکی، ناونیشانی گەورە و کورتەی هەواڵ نووسراوە و دەبێت بە هەواڵی ڕاستەقینە بگۆڕدرێت.
+آخرین اخبار|دوایین هەواڵەکان
+پربازدیدترین‌ها|زۆرترین بینراوەکان
+برنامه جشنواره‌های فرهنگی پاییز استان اعلام شد|بەرنامەی فێستیڤاڵە کولتووریەکانی پاییزی پارێزگا ڕاگەیەندرا
+مسیرهای پیشنهادی طبیعت‌گردی در جنگل‌های بلوط|ڕێگا پێشنیارکراوەکانی سروشتگەڕی لە دارستانەکانی بەڕوو
+وضعیت جوی هفته آینده در شهرهای کردستان|دۆخی کەشوهەوای هەفتەی داهاتوو لە شارەکانی کوردستان
+صنایع‌دستی استان در نمایشگاه ملی عرضه می‌شود|پیشەسازی دەستییەکانی پارێزگا لە پێشانگای نیشتمانیدا نمایش دەکرێن
+تیم‌های ورزشی استان در مرحله جدید رقابت‌ها|تیمە وەرزشییەکانی پارێزگا لە قۆناغی نوێی پێشبڕکێکان
+موسیقی محلی و روایت‌های مردمی|مۆسیقای خۆجێیی و گێڕانەوە گشتییەکان
+نمایشگاه خوشنویسی در سنندج|پێشانگای خۆشنووسی لە سنە
+دریاچه زریوار در فصل پاییز|دەریاچەی زرێبار لە وەرزی پاییز
+روستاهای هدف گردشگری اورامان|گوندە ئامانجە گەشتیارییەکانی هەورامان
+بازار فرش و گلیم دستباف|بازاڕی فەرش و گلیمی دەستچنراو
+مرز|سنوور
+مرزهای تجاری و ظرفیت صادرات|سنوورە بازرگانییەکان و توانای هەناردە
+نتایج هفته در لیگ‌های استانی|ئەنجامی هەفتە لە لیگە پارێزگاییەکان
+جوانان کردستان در مسابقات کشوری|گەنجانی کوردستان لە پێشبڕکێ نیشتمانییەکان
+مسابقات|پێشبڕکێکان
+نظرسنجی|ڕاپرسی
+مهم‌ترین موضوع استان برای شما چیست؟|گرنگترین بابەتی پارێزگا بەلای ئێوەوە چییە؟
+تماس با ما|پەیوەندیمان پێوە بکە
+ایمیل یا تلفن|ئیمەیڵ یان تەلەفۆن
+پیام|نامە
+ارسال پیام|ناردنی نامە
+نشانی: سنندج (نمونه)|ناونیشان: سنە (نموونە)
+ایمیل: info@example.ir|ئیمەیڵ: info@example.ir
+نمونه طراحی رابط خبری|نموونەی دیزاینی ڕووکاری هەواڵی
+همه|هەموو
+همه محتوا نمونه است|هەموو ناوەڕۆک نموونەیە
+همه استان|هەموو پارێزگا
+جلسه شورای شهر درباره ساماندهی مسیرهای پیاده‌روی برگزار شد|کۆبوونەوەی شورای شار دەربارەی ڕێکخستنی ڕێگای پیادەڕۆیی ئەنجامدرا
+شوراها و شهرداری‌ها|شوراکان و شارەوانییەکان
+فرهنگی هنری|کولتووری و هونەری
+آماده‌سازی تفرجگاه‌های اطراف دریاچه برای مسافران پاییزی|ئامادەکردنی شوێنی کات بەسەربردنی دەوروبەری دەریاچە بۆ گەشتیارانی پاییز
+نمایشگاه تولیدات محلی با حضور کارگاه‌های کوچک آغاز به کار کرد|پێشانگای بەرهەمە خۆجێییەکان بە بەشداریی کارگە بچووکەکان دەستی پێکرد
+اصناف|پیشەوەران
+گزارش وضعیت تجارت مرزی در هفته جاری|ڕاپۆرتی دۆخی بازرگانی سنووری لە هەفتەی ئێستادا
+ورزشی سرگرمی|وەرزشی و ڕابواردن
+مسابقات دوستانه جوانان در ورزشگاه شهر برگزار می‌شود|پێشبڕکێی دۆستانەی گەنجان لە یاریگای شار ئەنجام دەدرێت
+کارگاه آموزش صنایع‌دستی سنتی برای نوجوانان دایر شد|کارگەی فێرکردنی پیشەسازی دەستیی ڕەسەن بۆ هەرزەکاران کرایەوە
+صنایع دستی|پیشەسازی دەستی
+طرح پاکسازی مسیرهای طبیعی با مشارکت مردم اجرا شد|پڕۆژەی پاککردنەوەی ڕێگا سروشتییەکان بە بەشداریی خەڵک جێبەجێ کرا
+منابع طبیعی و محیط زیست|سەرچاوە سروشتییەکان و ژینگە
+شب شعر و موسیقی در تالار فرهنگی استان|شەوی شیعر و مۆسیقا لە هۆڵی کولتووریی پارێزگا
+هنرهای ادبی و نمایشی|هونەرە ئەدەبی و شانۆییەکان
+علمی آموزشی مهارتی|زانستی، پەروەردەیی و پیشەیی
+آغاز ثبت‌نام دوره‌های آموزشی مهارت‌آموزی در شهر|دەستپێکردنی تۆمارکردن بۆ خولەکانی فێربوونی پیشە لە شار
+فنی و حرفه‌ای|تەکنیکی و پیشەیی
+معرفی جاذبه‌های طبیعی منطقه برای طبیعت‌گردان|ناساندنی سەرنجڕاکێشە سروشتییەکانی ناوچە بۆ سروشتگەڕان
+هم‌اکنون|ئێستا
+گردشگری و طبیعت|گەشتیاری و سروشت
+اشتغال و اقتصاد|هەلی کار و ئابووری
+راه‌ها و زیرساخت|ڕێگاکان و ژێرخان
+یادداشت|یادداشت
+نویسنده نمونه ۱|نووسەری نموونە ١
+نویسنده نمونه ۲|نووسەری نموونە ٢
+نویسنده نمونه ۳|نووسەری نموونە ٣
+نویسنده نمونه ۴|نووسەری نموونە ٤
+نگاهی به ظرفیت‌های گردشگری استان|تەماشایەک بۆ توانا گەشتیارییەکانی پارێزگا
+گفت‌وگو درباره آینده صنایع‌دستی|گفتوگۆ دەربارەی داهاتووی پیشەسازی دەستی
+چالش‌های حمل‌ونقل زمستانی در گردنه‌ها|ئاڵنگارییەکانی گواستنەوەی زستان لە گەردنەکان
+ضرورت حفظ جنگل‌های بلوط|پێویستی پاراستنی دارستانەکانی بەڕوو
+دریاچه زریوار از نگاهی تازه|دەریاچەی زرێبار لە دیدێکی نوێوە
+بازار سنتی سنندج و روایت صنایع‌دستی|بازاڕی ڕەسەنی سنە و گێڕانەوەی پیشەسازی دەستی
+جنگل‌های بلوط در آستانه پاییز|دارستانەکانی بەڕوو لە بەرەبەیانی پاییز
+جشنواره موسیقی محلی در راه است|فێستیڤاڵی مۆسیقای خۆجێیی لە ڕێگایە
+پیام شما ثبت شد. ممنون از همراهی شما.|نامەکەت تۆمار کرا. سوپاس بۆ هاوکارییەکەت.
+بازگشت به صفحه اول|گەڕانەوە بۆ لاپەڕەی سەرەکی
+بازگشت به سایت|گەڕانەوە بۆ سایت
+این متن نمونه برای نمایش قالب صفحه جزئیات خبر است و باید با گزارش واقعی جایگزین شود.|ئەم دەقە نموونەیە بۆ پیشاندانی شێوازی لاپەڕەی وردەکاریی هەواڵ و دەبێت بە ڕاپۆرتی ڕاستەقینە بگۆڕدرێت.
+در اینجا بدنه خبر قرار می‌گیرد: توضیح رویداد، نقل‌قول منابع و جزئیات زمان و مکان. پاراگراف‌ها کوتاه و با فاصله خط زیاد چیده شده‌اند تا خواندن راحت باشد.|لێرەدا ناوەڕۆکی هەواڵ دادەنرێت: ڕوونکردنەوەی ڕووداو، وتەی سەرچاوەکان و وردەکاریی کات و شوێن. بڕگەکان کورت و بە مەودای هێڵی زۆر ڕێکخراون بۆ ئەوەی خوێندنەوە ئاسان بێت.
+در پایان خبر می‌توان منبع، نام خبرنگار و پیوند گزارش‌های مرتبط را آورد.|لە کۆتایی هەواڵدا دەکرێت سەرچاوە، ناوی ڕاپۆرتەر و بەستەری ڕاپۆرتە پەیوەندیدارەکان بهێنرێت.
+کپی پیوند خبر|کۆپیکردنی بەستەری هەواڵ
+خبرهای مرتبط|هەواڵی پەیوەندیدار
+پیوند کپی شد.|بەستەر کۆپی کرا.
+کپی انجام نشد.|کۆپیکردن سەرکەوتوو نەبوو.
+اخبار استان|هەواڵی پارێزگا
+غروب بر فراز کوه‌ها|ئێوارە لەسەر چیاکان
+مسیر پیاده‌روی در جنگل|ڕێگای پیادەڕۆیی لە دارستان
+بازار صنایع‌دستی|بازاڕی پیشەسازی دەستی
+دریاچه در صبح|دەریاچە لە بەیانیدا
+روستای کوهستانی|گوندی چیایی
+جشنواره محلی|فێستیڤاڵی خۆجێیی
+پاییز در دره|پاییز لە دۆڵدا
+شب شهر|شەوی شار
+گزارش تصویری از طبیعت پاییزی|ڕاپۆرتی وێنەیی لە سروشتی پاییز
+گفت‌وگو با هنرمندان محلی|گفتوگۆ لەگەڵ هونەرمەندانی خۆجێیی
+مسیر دریاچه تا کوهستان|ڕێگای دەریاچە تا چیا
+مستند کوتاه از صنایع‌دستی|بەڵگەفیلمی کورت لە پیشەسازی دەستی
+بستن|داخستن
+این پخش‌کننده نمونه است؛ در نسخه واقعی، ویدیو اینجا پخش می‌شود.|ئەم لێدەرە نموونەیە؛ لە وەشانی ڕاستەقینەدا ڤیدیۆ لێرە لێدەدرێت.
+نتیجه‌ای پیدا نشد.|هیچ ئەنجامێک نەدۆزرایەوە.
+ویدیویی بارگذاری نشده است؛ از داشبورد، فایل یا نشانی ویدیو را اضافه کنید.|هیچ ڤیدیۆیەک بار نەکراوە؛ لە پانێڵەوە فایل یان ناونیشانی ڤیدیۆ زیاد بکە.
+احزاب|حیزبەکان
+تشکل‌ها|ڕێکخراوەکان
+استانداری|پارێزگاری
+امنیت|ئاسایش
+سپاه|سپا
+ارتش|ئەرتەش
+بسیج|بەسیج
+انتخابات|هەڵبژاردنەکان
+جمعیت و ثبت احوال|دانیشتووان و تۆماری باری شارستانی
+انتظامی|ئینتزامی
+نمایندگی ولی فقیه در استان|نوێنەرایەتیی وەلی فەقیه لە پارێزگا
+شورای نگهبان|شورای پاسەوان
+مجلس خبرگان|ئەنجومەنی شارەزایان
+مجلس شورای اسلامی|ئەنجومەنی شورای ئیسلامی
+حقوقی قضایی|یاسایی و دادوەری
+دادگستری|دادگوستەری
+سازمان بازرسی|ڕێکخراوی بازرسی
+دیوان محاسبات|دیوانی ژمێریاری
+پزشکی قانونی|پزیشکی یاسایی
+حقوق بشر|مافی مرۆڤ
+سازمان قضایی نیروهای مسلح|ڕێکخراوی دادوەریی هێزە چەکدارەکان
+ایثار و شهادت|خۆبەخشی و شەهیدی
+آب و هوا|کەشوهەوا
+بهزیستی|بەهزیستی
+کمیته امداد|کۆمیتەی ئیمداد
+تأمین اجتماعی|دابینکردنی کۆمەڵایەتی
+راهور|ڕاهوور
+راهداری|ڕێگاوبان
+اورژانس و امداد|فریاکەوتن و ئیمداد
+هلال احمر|مانگی سووری
+پلیس راه|پۆلیسی ڕێگا
+زنان و خانواده|ژنان و خێزان
+انتظامی و حوادث|ئینتزامی و ڕووداوەکان
+بازار و بازرگانی|بازاڕ و بازرگانی
+انرژی و مخابرات|وزە و پەیوەندییەکان
+صنایع و معادن|پیشەسازی و کانزاکان
+شهرسازی|شارسازی
+راه‌سازی|ڕێگاسازی
+عمران|ئاوەدانکردنەوە
+بنیاد مسکن|بنیادی نیشتەجێبوون
+کشاورزی|کشتوکاڵ
+دامداری|ئاژەڵداری
+بیمه‌ها و حمل و نقل|بیمەکان و گواستنەوە
+شهرک‌های صنعتی|شارۆچکە پیشەسازییەکان
+مناطق آزاد تجاری|ناوچە ئازادە بازرگانییەکان
+گمرک|گومرگ
+تعاون|هاوکاری
+کار|کار
+اشتغال و رفاه عمومی|هەلی کار و خۆشگوزەرانیی گشتی
+برنامه و بودجه|پلان و بوودجە
+آموزش و پرورش|فێرکردن و پەروەردە
+دانشگاه‌ها|زانکۆکان
+جهاد دانشگاهی|جیهادی زانکۆیی
+حوزه‌های علمیه|حەوزە زانستییەکان
+شرکت‌های دانش‌بنیان|کۆمپانیا زانیاریبنەماکان
+پارک علم و فناوری|پارکی زانست و تەکنەلۆژیا
+بنیاد نخبگان|بنیادی نوخبەکان
+پزشکی سلامت|پزیشکی و تەندروستی
+دانشگاه علوم پزشکی|زانکۆی زانستە پزیشکییەکان
+بهداشت و درمان|تەندروستی و چارەسەر
+بیمارستان‌ها|نەخۆشخانەکان
+طب سنتی|پزیشکی نەریتی
+انتقال خون|گواستنەوەی خوێن
+سازمان نظام پزشکی|ڕێکخراوی نیزامی پزیشکی
+دین|ئایین
+مسجد|مزگەوت
+قرآن|قورئان
+کتاب، مطبوعات و انتشارات|کتێب، چاپەمەنی و بڵاوکردنەوە
+سینما، تئاتر، رادیو و تلویزیون|سینەما، شانۆ، ڕادیۆ و تەلەفیزیۆن
+هنرهای تجسمی|هونەرە وێنەییەکان
+موسیقی و مولودی|مۆسیقا و مەولوود
+میراث فرهنگی|میراتی کولتووری
+فرهنگ و آداب و رسوم|کولتوور و ڕەسم و ڕێساکان
+جشنواره‌های منطقه‌ای|فێستیڤاڵە ناوچەییەکان
+حج و اوقاف و عتبات|حەج و ئەوقاف و عەتەبات
+کودک و نوجوان|منداڵ و هەرزەکار
+هیئت‌های ورزشی|ئەنجومەنە وەرزشییەکان
+تفریح و سرگرمی|کات بەسەربردن و ڕابواردن
+بازی‌های بومی محلی|یارییە خۆجێییەکان`;
+const KU={};R.split('\n').forEach(l=>{const i=l.indexOf('|');if(i>0)KU[l.slice(0,i)]=l.slice(i+1)});
+const orig=new WeakMap(),AT=['placeholder','aria-label','alt','title'];
+let lang='fa',busy=false;
+function t1(s){s=s.trim();if(KU[s])return KU[s];
+ let m=s.match(/^(.*?)\s*(دقیقه|ساعت) پیش$/);if(m)return(m[1]?m[1]+' ':'')+(m[2]=='ساعت'?'کاتژمێر':'خولەک')+' لەمەوبەر';
+ m=s.match(/^همه (.+)$/);if(m)return'هەموو '+t1(m[1]);m=s.match(/^([^\u0600-\u06FF]+)(.+)$/);if(m&&KU[m[2].trim()])return m[1]+KU[m[2].trim()];return s}
+const tr=s=>s.split(' • ').map(t1).join(' • ');
+function proc(root){
+ if(root.nodeType===3)root=root.parentNode;if(!root||!root.querySelectorAll)return;
+ const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;
+ while(n=w.nextNode()){
+  if(/^(SCRIPT|STYLE|TEXTAREA)$/.test(n.parentNode.nodeName))continue;
+  if(!orig.has(n)||n.__o!==n.data&&n.__t!==n.data)orig.set(n,n.data);
+  const o=orig.get(n);if(!o.trim())continue;
+  const v=lang==='ku'?o.match(/^\s*/)[0]+tr(o.trim())+o.match(/\s*$/)[0]:o;
+  if(n.data!==v)n.data=v;n.__o=o;n.__t=v}
+ [root,...root.querySelectorAll('[placeholder],[aria-label],[alt],[title]')].forEach(e=>AT.forEach(a=>{
+  if(!e.hasAttribute||!e.hasAttribute(a))return;const k='data-o-'+a,tk='data-t-'+a,cur=e.getAttribute(a);
+  if(!e.hasAttribute(k)||(e.getAttribute(tk)!==cur&&e.getAttribute(k)!==cur))e.setAttribute(k,cur);
+  const v=lang==='ku'?tr(e.getAttribute(k)):e.getAttribute(k);e.setAttribute(a,v);e.setAttribute(tk,v)}))}
+const mo=new MutationObserver(ms=>{if(busy)return;busy=true;mo.disconnect();
+ ms.forEach(m=>{if(m.type==='characterData')proc(m.target);else m.addedNodes.forEach(proc)});
+ mo.observe(document.body,{childList:true,subtree:true,characterData:true});busy=false});
+function setLang(l){lang=l;try{localStorage.setItem('knlang',l)}catch(e){}
+ mo.disconnect();document.documentElement.lang=l==='ku'?'ckb':'fa';
+ $('lang').textContent=l==='ku'?'فارسی':'کوردی';
+ proc(document.body);
+ document.title=l==='ku'?'کوردستانی ئەمڕۆ | ماڵپەڕی هەواڵ':CFG.name+' | سایت خبری';
+ mo.observe(document.body,{childList:true,subtree:true,characterData:true})}
+$('lang').onclick=()=>setLang(lang==='ku'?'fa':'ku');
+let sv='fa';try{sv=localStorage.getItem('knlang')||'fa'}catch(e){}
+if(sv==='ku')setLang('ku');else mo.observe(document.body,{childList:true,subtree:true,characterData:true});
+})();
+</script>
+</body>
+</html>
